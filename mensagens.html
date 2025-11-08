@@ -7,6 +7,7 @@
     <title>Luxo - Contato</title>
     <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/mensagens.css">
   </head>
 
   <body>
@@ -31,41 +32,33 @@
         </ul>
       </nav>
     </header>
-
     <main>
       <div class="pagtitle">
         <div class="bgtitle"></div>
-        <h2>Entre em contato</h2>
+        <h2>Mensagens Recebidas</h2>
       </div>
+    
 
-      <form id="formContato">
-        <div class="entry">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" required/>
-        </div>
-
-        <div class="entry">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" required/>
-        </div>
-
-        <div class="entry">
-          <label for="msg">Mensagem</label>
-          <textarea cols="40" rows="7" id="mensagem" required></textarea>
-        </div>
-        <div class="buttons">
-          <button id="button" type="submit">Enviar</button>
-        </div>
-      </form>
-        
+      <button onclick="logout()">Deslogar</button>
+      <table id="tabelaMensagens">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Mensagem</th>
+            
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button onclick="atualizarMensagens()">Atualizar</button>
     </main>
-    </div>
 
     <footer>
       <p>© 2023 por Luxo aluguel de iates</p>
     </footer>
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/api.js"></script>
-    <script src="js/contato.js"></script>
+    <script src="js/mensagens.js"></script>
   </body>
 </html>
