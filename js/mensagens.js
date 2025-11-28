@@ -46,7 +46,7 @@ function mostrarMensagens(lista){
         linha.querySelector(".btnVisualizar").addEventListener("click", function(){
             if(confirm("Marcar esta mensagem como visualizada?")){
                 linha.classList.remove("naoLida");
-                salvarComoLida(idMensagem);
+                salvarComoLida(msg);
             }
         });
 
